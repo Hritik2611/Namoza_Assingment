@@ -1,0 +1,1163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>OrthoNow | Book Consultation</title>
+
+    <meta
+      name="description"
+      content="Book your orthopaedic consultation with experienced doctors for knee and back pain."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#f8fafc;
+
+    color:#1e293b;
+
+    line-height:1.6;
+
+}
+
+/* ===========================
+   COMMON
+=========================== */
+
+.container{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+section{
+
+    padding:80px 0;
+
+}
+
+h1,h2,h3,h4{
+
+    color:#0f172a;
+
+}
+
+p{
+
+    color:#64748b;
+
+}
+
+a{
+
+    text-decoration:none;
+
+}
+
+img{
+
+    width:100%;
+
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+header{
+
+    position:sticky;
+
+    top:0;
+
+    background:white;
+
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+
+    z-index:1000;
+
+}
+
+.nav{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    height:75px;
+
+}
+
+.logo h2{
+
+    color:#2563eb;
+
+    font-size:30px;
+
+    font-weight:700;
+
+}
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+.logo img{
+
+    width:48px;
+
+    height:auto;
+
+    display:block;
+
+}
+
+.nav-btn{
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:12px 22px;
+
+    border-radius:8px;
+
+    transition:.3s;
+
+}
+
+.nav-btn:hover{
+
+    background:#1d4ed8;
+
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero{
+
+    background:linear-gradient(to right,#eff6ff,#ffffff);
+
+}
+
+.hero-container{
+
+    display:grid;
+
+    grid-template-columns:1fr 420px;
+
+    gap:60px;
+
+    align-items:center;
+
+}
+
+.tag{
+
+    display:inline-block;
+
+    background:#dbeafe;
+
+    color:#2563eb;
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    margin-bottom:25px;
+
+    font-size:14px;
+
+}
+
+.hero-content h1{
+
+    font-size:48px;
+
+    line-height:1.2;
+
+    margin-bottom:20px;
+
+}
+
+.hero-content p{
+
+    font-size:18px;
+
+    margin-bottom:30px;
+
+}
+
+/* ===========================
+   STATS
+=========================== */
+
+.stats{
+
+    display:flex;
+
+    gap:20px;
+
+    margin-bottom:35px;
+
+}
+
+.stat{
+
+    flex:1;
+
+    background:white;
+
+    text-align:center;
+
+    padding:20px;
+
+    border-radius:12px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.stat h3{
+
+    color:#2563eb;
+
+    font-size:28px;
+
+}
+
+.stat p{
+
+    margin-top:8px;
+
+    font-size:14px;
+
+}
+
+/* ===========================
+   FEATURES
+=========================== */
+
+.features{
+
+    list-style:none;
+
+}
+
+.features li{
+
+    margin:15px 0;
+
+    font-size:17px;
+
+    color:#334155;
+
+}
+
+/* ===========================
+   FORM CARD
+=========================== */
+
+.form-card{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:35px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.1);
+
+}
+
+.form-card h2{
+
+    margin-bottom:10px;
+
+}
+
+.form-card p{
+
+    margin-bottom:25px;
+
+}
+
+.input-group{
+
+    margin-bottom:20px;
+
+}
+
+.input-group label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-weight:500;
+
+}
+
+.input-group input,
+.input-group select{
+
+    width:100%;
+
+    padding:15px;
+
+    border:1px solid #cbd5e1;
+
+    border-radius:8px;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+.input-group input:focus,
+.input-group select:focus{
+
+    outline:none;
+
+    border-color:#2563eb;
+
+}
+
+button{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    background:#2563eb;
+
+    color:white;
+
+    font-size:17px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    background:#1d4ed8;
+
+}
+
+small{
+
+    display:block;
+
+    text-align:center;
+
+    margin-top:20px;
+
+    color:#64748b;
+
+}
+
+.thank-you{
+
+    display:none;
+
+    text-align:center;
+
+    margin-top:20px;
+
+}
+
+/* ===========================
+   WHY CHOOSE US
+=========================== */
+
+.why-us{
+
+    background:#ffffff;
+
+}
+
+.why-us h2{
+
+    text-align:center;
+
+    font-size:38px;
+
+    margin-bottom:50px;
+
+}
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+.card{
+
+    background:#f8fafc;
+
+    padding:30px 25px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    transition:.3s;
+
+    border:1px solid #e2e8f0;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 15px 30px rgba(0,0,0,.08);
+
+}
+
+.card h3{
+
+    margin-bottom:15px;
+
+    color:#2563eb;
+
+}
+
+.card p{
+
+    font-size:15px;
+
+}
+
+/* ===========================
+   TESTIMONIALS
+=========================== */
+
+.testimonials{
+
+    background:#eff6ff;
+
+}
+
+.testimonials h2{
+
+    text-align:center;
+
+    font-size:38px;
+
+    margin-bottom:50px;
+
+}
+
+.testimonial-wrapper{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+.testimonial{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.testimonial:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.testimonial p:first-child{
+
+    color:#f59e0b;
+
+    font-size:22px;
+
+    margin-bottom:15px;
+
+}
+
+.testimonial h4{
+
+    margin-top:20px;
+
+    color:#2563eb;
+
+}
+
+/* ===========================
+   CTA SECTION
+=========================== */
+
+.cta{
+
+    background:#2563eb;
+
+    color:white;
+
+    text-align:center;
+
+}
+
+.cta h2{
+
+    color:white;
+
+    font-size:40px;
+
+    margin-bottom:20px;
+
+}
+
+.cta p{
+
+    color:#e2e8f0;
+
+    max-width:700px;
+
+    margin:auto;
+
+    margin-bottom:35px;
+
+}
+
+.cta a{
+
+    display:inline-block;
+
+    background:white;
+
+    color:#2563eb;
+
+    padding:16px 35px;
+
+    border-radius:10px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.cta a:hover{
+
+    background:#dbeafe;
+
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+
+    background:#0f172a;
+
+    color:white;
+
+    text-align:center;
+
+    padding:40px 20px;
+
+}
+
+footer h3{
+
+    color:white;
+
+    margin-bottom:15px;
+
+}
+
+.footer-logo{
+
+    justify-content:center;
+
+    margin-bottom:10px;
+
+}
+
+.footer-logo span{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:8px;
+
+    border-radius:14px;
+
+    background:rgba(255,255,255,.95);
+
+}
+
+.footer-logo img{
+
+    width:52px;
+
+    height:auto;
+
+    display:block;
+
+    filter:brightness(1.1) saturate(1.15);
+
+}
+
+footer .footer-logo h3{
+
+    margin-bottom:0;
+
+}
+
+footer p{
+
+    color:#cbd5e1;
+
+    margin-top:10px;
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+.hero-container{
+
+    grid-template-columns:1fr;
+
+}
+
+.form-card{
+
+    max-width:550px;
+
+    margin:auto;
+
+}
+
+.cards{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.testimonial-wrapper{
+
+    grid-template-columns:1fr;
+
+}
+
+.stats{
+
+    flex-wrap:wrap;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.nav{
+
+    flex-direction:column;
+
+    height:auto;
+
+    padding:20px 0;
+
+    gap:15px;
+
+}
+
+.hero-content{
+
+    text-align:center;
+
+}
+
+.hero-content h1{
+
+    font-size:36px;
+
+}
+
+.hero-content p{
+
+    font-size:16px;
+
+}
+
+.stats{
+
+    flex-direction:column;
+
+}
+
+.cards{
+
+    grid-template-columns:1fr;
+
+}
+
+.form-card{
+
+    padding:25px;
+
+}
+
+section{
+
+    padding:60px 0;
+
+}
+
+.cta h2{
+
+    font-size:30px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.container{
+
+    width:94%;
+
+}
+
+.hero-content h1{
+
+    font-size:30px;
+
+}
+
+.logo h2{
+
+    font-size:24px;
+
+}
+
+button{
+
+    font-size:16px;
+
+}
+
+input,
+select{
+
+    font-size:15px;
+
+}
+
+}
+    </style>
+  </head>
+
+  <body>
+    <!-- ================= HEADER ================= -->
+
+    <header>
+      <div class="container nav">
+        <div class="logo">
+          <span><img src="assets/logo.png" alt="OrthoNow logo" /></span>
+          <h2>ORTHONOW</h2>
+        </div>
+
+        <a href="#consultationForm" class="nav-btn"> Book Consultation </a>
+      </div>
+    </header>
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <section class="hero">
+      <div class="container hero-container">
+        <!-- LEFT CONTENT -->
+
+        <div class="hero-content">
+          <span class="tag"> Trusted Orthopaedic Care </span>
+
+          <h1>
+            Knee or Back Pain?
+
+            <br />
+
+            Get Expert Orthopaedic Opinion Today.
+          </h1>
+
+          <p>
+            Consult experienced orthopaedic specialists across Bengaluru.
+            Same-day appointments available.
+          </p>
+
+          <!-- TRUST STATS -->
+
+          <div class="stats">
+            <div class="stat">
+              <h3>50,000+</h3>
+
+              <p>Happy Patients</p>
+            </div>
+
+            <div class="stat">
+              <h3>20+</h3>
+
+              <p>Specialists</p>
+            </div>
+
+            <div class="stat">
+              <h3>9</h3>
+
+              <p>Clinics</p>
+            </div>
+          </div>
+
+          <!-- FEATURES -->
+
+          <ul class="features">
+            <li>✔ Same Day Consultation</li>
+
+            <li>✔ Advanced Diagnosis</li>
+
+            <li>✔ Personalized Treatment</li>
+
+            <li>✔ Trusted Doctors</li>
+          </ul>
+        </div>
+
+        <!-- RIGHT FORM -->
+
+        <div class="form-card">
+          <h2>Book Free Consultation</h2>
+
+          <p>Fill the form and our team will contact you within 30 minutes.</p>
+
+          <form id="consultationForm">
+            <div class="input-group">
+              <label for="name"> Full Name </label>
+
+              <input
+                type="text"
+                id="name"
+                placeholder="Enter your full name"
+                required
+              />
+            </div>
+
+            <div class="input-group">
+              <label for="phone"> Phone Number </label>
+
+              <input
+                type="tel"
+                id="phone"
+                placeholder="Enter your phone number"
+                required
+              />
+            </div>
+
+            <div class="input-group">
+              <label for="clinic"> Preferred Clinic </label>
+
+              <select id="clinic">
+                <option value="Bengaluru">Bengaluru</option>
+
+                <option value="Hyderabad">Hyderabad</option>
+
+                <option value="Chennai">Chennai</option>
+
+                <option value="Chennai">Noida</option>
+
+                <option value="Chennai">Delhi</option>
+              </select>
+            </div>
+
+            <button id="submitBtn" type="submit">Book My Consultation</button>
+          </form>
+
+          <div id="thankYou" class="thank-you">
+            <h3>Thank You!</h3>
+
+            <p>Your consultation request has been received.</p>
+
+            <p>Our team will contact you shortly.</p>
+          </div>
+
+          <small> Your information is safe and confidential. </small>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= WHY CHOOSE US ================= -->
+
+    <section class="why-us">
+      <div class="container">
+        <h2>Why Choose OrthoNow?</h2>
+
+        <div class="cards">
+          <div class="card">
+            <h3>Experienced Doctors</h3>
+
+            <p>Consultation with highly experienced orthopaedic specialists.</p>
+          </div>
+
+          <div class="card">
+            <h3>Modern Clinics</h3>
+
+            <p>Equipped with advanced diagnostic facilities.</p>
+          </div>
+
+          <div class="card">
+            <h3>Fast Appointment</h3>
+
+            <p>Same-day consultation whenever available.</p>
+          </div>
+
+          <div class="card">
+            <h3>Personalized Care</h3>
+
+            <p>Treatment plans tailored for every patient.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TESTIMONIALS ================= -->
+
+    <section class="testimonials">
+      <div class="container">
+        <h2>What Our Patients Say</h2>
+
+        <div class="testimonial-wrapper">
+          <div class="testimonial">
+            <p>★★★★★</p>
+
+            <p>
+              "Excellent doctors and friendly staff. My knee pain has improved
+              significantly."
+            </p>
+
+            <h4>Prashant Singh</h4>
+          </div>
+
+          <div class="testimonial">
+            <p>★★★★★</p>
+
+            <p>"Quick appointment and very professional consultation."</p>
+
+            <h4>Priya Roy</h4>
+          </div>
+
+          <div class="testimonial">
+            <p>★★★★★</p>
+
+            <p>"Highly recommended for back pain treatment."</p>
+
+            <h4>Amit Verma</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CTA ================= -->
+
+    <section class="cta">
+      <div class="container">
+        <h2>Don't Let Pain Stop Your Life</h2>
+
+        <p>
+          Book your consultation today and take the first step toward recovery.
+        </p>
+
+        <a href="#consultationForm"> Book Consultation </a>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+      <div class="container">
+        <div class="logo footer-logo">
+          <span><img src="assets/logo.png" alt="OrthoNow logo" /></span>
+          <h3>ORTHONOW</h3>
+        </div>
+
+        <p>9 Clinics | 20+ Specialists | 50,000+ Happy Patients</p>
+
+        <p>© 2026 OrthoNow. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+// ==============================
+// ELEMENT SELECTION
+// ==============================
+
+const form = document.getElementById("consultationForm");
+
+const thankYou = document.getElementById("thankYou");
+
+const submitBtn = document.getElementById("submitBtn");
+
+// ==============================
+// FORM SUBMIT
+// ==============================
+
+form.addEventListener("submit", function (event) {
+
+    event.preventDefault();
+
+    // ==============================
+    // GET INPUT VALUES
+    // ==============================
+
+    const name = document.getElementById("name").value.trim();
+
+    const phone = document.getElementById("phone").value.trim();
+
+    const clinic = document.getElementById("clinic").value;
+
+    // ==============================
+    // VALIDATION
+    // ==============================
+
+    if (name.length < 3) {
+
+        alert("Please enter your full name.");
+
+        return;
+
+    }
+
+    if (!/^[6-9]\d{9}$/.test(phone)) {
+
+        alert("Please enter a valid 10-digit mobile number.");
+
+        return;
+
+    }
+
+    // ==============================
+    // BUTTON LOADING STATE
+    // ==============================
+
+    submitBtn.disabled = true;
+
+    submitBtn.innerText = "Submitting...";
+
+    // ==============================
+    // GTM DATALAYER
+    // ==============================
+
+    window.dataLayer = window.dataLayer || [];
+
+    window.dataLayer.push({
+
+        event: "consultation_form_submitted",
+
+        user_name: name,
+
+        phone_number: phone,
+
+        clinic_location: clinic,
+
+        page_name: "consultation_landing_page",
+
+        form_name: "book_consultation",
+
+        submission_time: new Date().toISOString()
+
+    });
+
+    console.log("DataLayer Event");
+
+    console.log(window.dataLayer);
+
+    // ==============================
+    // SHOW THANK YOU
+    // ==============================
+
+    setTimeout(function () {
+
+        form.style.display = "none";
+
+        thankYou.style.display = "block";
+
+    }, 1000);
+
+});
+    </script>
+  </body>
+</html>
